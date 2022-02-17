@@ -29,6 +29,12 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./docker/front
-          file: ./docker/front/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/taiga-front-openid:latest
+          
+      - name: Build back
+        uses: docker/build-push-action@v2
+        with:
+          context: ./docker/back
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/taiga-back-openid:latest
