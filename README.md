@@ -296,3 +296,4 @@ My thanks to all the people who have added to the plugin
 @baloo42
 @carneirofc
 The whole taiga team who wrote the github plugin that this plugin is based off.
+update
